@@ -17,7 +17,7 @@ function TemperatureAndDetails() {
       </div>
       <div className="flex items-center justify-between flex-row text-white py-3">
         <img
-          src="hhtp://openweathermap.org/img/wn/01d@2x.png"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
           alt="sun"
           className="w-20"
         />
@@ -28,7 +28,39 @@ function TemperatureAndDetails() {
             Real feel
             <span className="font-medium ml-1">8°</span>
           </div>
+          <div className="flex font-light text-sm items-center justify-center">
+            <UilTear size={18} className="mr-1" />
+            Humidity
+            <span className="font-medium ml-1">54%</span>
+          </div>
+          <div className="flex font-light text-sm items-center justify-center">
+            <UilWind size={18} className="mr-1" />
+            Wind
+            <span className="font-medium ml-1">18 km/h</span>
+          </div>
         </div>
+      </div>
+
+      <div className="flex flex-row items-center justify-center space-x-2 text-white text-sm py-3">
+        <UilSun />
+        <p className="font-light">
+          Rise: <span className="font-medium ml-1">04:50</span>
+        </p>
+        <p className="font-light">|</p>
+        <UilSunset />
+        <p className="font-light">
+          Set: <span className="font-medium ml-1">21:03</span>
+        </p>
+        <p className="font-light">|</p>
+        <UilArrowUp />
+        <p className="font-light">
+          High: <span className="font-medium ml-1">5°</span>
+        </p>
+        <p className="font-light">|</p>
+        <UilArrowDown />
+        <p className="font-light">
+          Low: <span className="font-medium ml-1">0°</span>
+        </p>
       </div>
     </>
   );
